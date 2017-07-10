@@ -1,0 +1,749 @@
+<extend name="default/base" />
+<block name="main">
+  <div class="classify">
+    <section class="crumbs">
+      <a href="/">首页</a> >> <a class="active" href="/product?id=$index">上衣</a>
+    </section>
+    <section class="content">
+      <section class="list-bar">
+        <ul>
+          <li>所有类目</li>
+          <li class="active">
+            <div class="title">
+              <i class="icon fa fa-caret-down"></i>上衣
+            </div>
+            <dl>
+              <dd><a href="#">新品发布</a></dd>
+              <dd><a href="#">人气热销</a></dd>
+              <dd><a href="#">应季潮品</a></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="title">
+              <i class="icon fa fa-caret-right"></i>鞋子
+            </div>
+            <dl>
+              <dd><a href="#">畅销热卖</a></dd>
+              <dd><a href="#">潮流速递</a></dd>
+              <dd><a href="#">经典必备</a></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="title">
+              <i class="icon fa fa-caret-right"></i>包包配饰
+            </div>
+            <dl>
+              <dd><a href="#">人气精选</a></dd>
+              <dd><a href="#">畅销热卖</a></dd>
+              <dd><a href="#">当季新品</a></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="title">
+              <i class="icon fa fa-caret-right"></i>美妆
+            </div>
+            <dl>
+              <dd><a href="#">面部护肤</a></dd>
+              <dd><a href="#">香水彩妆</a></dd>
+              <dd><a href="#">身体护理</a></dd>
+            </dl>
+          </li>
+        </ul>
+        <div class="list-switch">
+          <i class="open fa fa-caret-right"></i>
+          <i class="closed fa fa-caret-left"></i>
+        </div>
+      </section>
+      <section class="shop-bar">
+        <section class="shop-navigation">
+          <ul>
+            <li>
+              <a href="#"><i class="icon fa fa-caret-right"></i>新品发布</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon fa fa-caret-right"></i>人气热销</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon fa fa-caret-right"></i>应季潮品</a>
+            </li>
+          </ul>
+          <div class="fold">
+            <span class="stop"><i class="icon fa fa-caret-up"></i>收起</span>
+            <span class="open"><i class="icon fa fa-caret-down"></i>展开</span>
+          </div>
+        </section>
+        <section class="shop-option">
+          <ul>
+            <li>排序：</li>
+            <li>
+              <a href="#">
+                <span class="name">上架时间</span>
+                <i class="icon icon-asc fa fa-long-arrow-up"></i>
+                <i class="icon icon-desc fa fa-long-arrow-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="name">价格</span>
+                <i class="icon icon-asc fa fa-long-arrow-up"></i>
+                <i class="icon icon-desc fa fa-long-arrow-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="name">人气</span>
+                <i class="icon icon-asc fa fa-long-arrow-up"></i>
+                <i class="icon icon-desc fa fa-long-arrow-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="name">销量</span>
+                <i class="icon icon-asc fa fa-long-arrow-up"></i>
+                <i class="icon icon-desc fa fa-long-arrow-down"></i>
+              </a>
+            </li>
+          </ul>
+          <dl>
+            <dd class="active">
+              <i class="icon fa fa-th-large"></i>
+              <span class="name">图屏</span>
+            </dd>
+            <dd>
+              <i class="icon fa fa-laptop"></i>
+              <span class="name">图文</span>
+            </dd>
+            <dd>
+              <i class="icon fa fa-align-justify"></i>
+              <span class="name">列表</span>
+            </dd>
+          </dl>
+          <div class="page">
+            <span>共9页</span>
+            <span>每页20条</span>
+            <span class="process">1/1</span>
+            <div class="tab">
+              <span class="flip">
+                <a class="#">上一页</a>
+              </span>
+              <span class="flip">
+                <a class="#">下一页</a>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="goods">
+          <div class="list-header">
+            <span class="subitem">商品名称</span>
+            <span class="subitem">市场价</span>
+            <span class="subitem">本站价</span>
+            <span class="subitem">您的价</span>
+            <span class="subitem">操作</span>
+          </div>
+          <ul class="list">
+            <li>
+              <a class="pic" href="/product?id=1" title="韩版纯色短袖男装宽松T恤">
+                <img src="/image/goods/goods_1.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=1">
+                  <div class="title">韩版纯色短袖男装宽松T恤<span class="tag recommend">推荐</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="name">市场价：</span>
+                    <span class="original">￥132.00</span>
+                    <span class="now">￥88.00</span>
+                    <span class="repeat-now">￥88.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥88.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥88.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥88.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=2" title="秋季新品韩版时尚夹克毛边显瘦百搭牛仔外套">
+                <img src="/image/goods/goods_2.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=2">
+                  <div class="title">秋季新品韩版时尚夹克毛边显瘦百搭牛仔外套<span class="tag recommend">推荐</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥198.00</span>
+                    <span class="now">￥132.00</span>
+                    <span class="repeat-now">￥132.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥132.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥132.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥132.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=3" title="夏季亚麻T恤短裤套装">
+                <img src="/image/goods/goods_3.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=3">
+                  <div class="title">夏季亚麻T恤短裤套装<span class="tag selling">热销</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥163.00</span>
+                    <span class="now">￥109.00</span>
+                    <span class="repeat-now">￥109.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥109.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥109.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥109.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=4" title="夏大码条纹男士POLO衫">
+                <img src="/image/goods/goods_4.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=4">
+                  <div class="title">夏大码条纹男士POLO衫<span class="tag special">特价</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥142.00</span>
+                    <span class="now">￥95.00</span>
+                    <span class="repeat-now">￥95.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥95.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥95.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥95.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=5" title="系带蝴蝶结竖条纹雪纺衬衫">
+                <img src="/image/goods/goods_5.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=5">
+                  <div class="title">系带蝴蝶结竖条纹雪纺衬衫<span class="tag selling">热销</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥133.00</span>
+                    <span class="now">￥85.00</span>
+                    <span class="repeat-now">￥85.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥85.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥85.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥85.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=6" title="白色针织开衫中长款防晒衫">
+                <img src="/image/goods/goods_6.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=6">
+                  <div class="title">白色针织开衫中长款防晒衫<span class="tag special">特价</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥148.00</span>
+                    <span class="now">￥99.00</span>
+                    <span class="repeat-now">￥99.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥99.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥99.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥99.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=7" title="七格格夏新款 重工趣味亮片休闲圆领短袖T恤女">
+                <img src="/image/goods/goods_7.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=7">
+                  <div class="title">七格格夏新款 重工趣味亮片休闲圆领短袖T恤女<span class="tag new">新款</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥103.00</span>
+                    <span class="now">￥69.00</span>
+                    <span class="repeat-now">￥69.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥69.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥69.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥69.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=8" title="韩版时尚秋冬新品显瘦纯色半高领灯笼袖套头针织衫上衣">
+                <img src="/image/goods/goods_8.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=8">
+                  <div class="title">韩版时尚秋冬新品显瘦纯色半高领灯笼袖套头针织衫上衣<span class="tag new">新款</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥102.00</span>
+                    <span class="now">￥68.00</span>
+                    <span class="repeat-now">￥68.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥68.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥68.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥68.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="pic" href="/product?id=9" title="秋季新品牛仔衣外套">
+                <img src="/image/goods/goods_9.jpg" />
+              </a>
+              <div class="cart">
+                <a class="cart-title" href="/product?id=9">
+                  <div class="title">秋季新品牛仔衣外套<span class="tag special">特价</span></div>
+                </a>
+                <div class="description">
+                  <div class="price">
+                    <span class="original">￥238.00</span>
+                    <span class="now">￥159.00</span>
+                    <span class="repeat-now">￥159.00</span>
+                  </div>
+                  <div class="shop-cart">
+                    <span class="title">加入购物车</span>
+                    <span class="icon icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                    <span class="icon icon-star">
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </span>
+                    <span class="icon icon-search">
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                    </span>
+                    <dl>
+                      <dd>
+                        <span class="item size">M</span>
+                        <span class="item">单价：<span class="number">￥159.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">L</span>
+                        <span class="item">单价：<span class="number">￥159.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                      <dd>
+                        <span class="item size">XL</span>
+                        <span class="item">单价：<span class="number">￥159.0</span></span>
+                        <div class="item num">
+                          <span class="amount">1</span>
+                          <div class="action">
+                            <i class="icon-order icon-asc"></i>
+                            <i class="icon-order icon-desc"></i>
+                          </div>
+                        </div>
+                        <span class="item">购买</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="pagination">
+            <span>共9页</span>
+            <span>每页20条</span>
+            <span class="process">1/1</span>
+            <div class="tab">
+              <span class="flip">
+                <a class="#"><i class="icon fa fa-caret-left"></i>上一页</a>
+              </span>
+              <span class="flip">1</span>
+              <span class="flip">
+                <a class="#">下一页<i class="icon fa fa-caret-right"></i></a>
+              </span>
+            </div>
+          <div>
+        </section>
+      </section>
+    </section>
+  </div>
+</block>
