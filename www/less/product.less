@@ -33,15 +33,52 @@
     .exploded-view {
       width: 450px;
       .main-view {
+        position: relative;
+        background: @white;
         margin-bottom: 15px;
+        .magnifier {
+          display:none;
+          position: absolute;
+          top:0;
+          left:0;
+          z-index:200;
+          cursor: crosshair;
+          background: @white;
+          opacity: .4;
+        }
         .pic {
           width: 100%;
         }
+        .enlarge-pic {
+          position:absolute;
+          overflow:hidden;
+          top:0;
+          display:none;
+          z-index: 400;
+          border: @border;
+        }
       }
-      .sub-view {
+      .show-view { 
+        left:20px; 
+        margin-top:10px;
+        .list {
+          position: absolute;
+          top: 0;
+          left: 0;
+          span {
+            border:1px solid @dark-gray;
+            .pointer;
+            &.sel {
+              border:1px solid @client;
+            }
+          }
+        }
+      }
+      .page-btn {
         position: relative;
         .page {
-          display: inline-block;
+          position: absolute;
+          top: -61px;
           width: 18px;
           height: 55px;
           margin-top: 1px;
@@ -53,33 +90,24 @@
           color: @dark-little-gray;
           border-radius: 4px;
           .pointer;
+          &.disabled {
+            color: @dark-little-gray;
+            cursor: not-allowed;
+          }
+          &:hover {
+            color: @pink;
+          }
           &.next-page {
-            float: right;
+            right: 0;
           }
         }
-        .list {
-          position: absolute;
-          top: 0;
-          left: 21px;
-          width: 410px;
-          height: 57px;
-          overflow: hidden;
-          ul {
-            position: absolute;
-            width: 490px;
-            li {
-              display: inline-block;
-              width: 57px;
-              border: 1px solid @client;
-              margin-right: 6px;
-              .pointer;
-              &:first-child {
-                margin-left: 8px;
-              }
-              .pic {
-                width: 100%;
-              }
-            }
+      }
+      .jiathis_style {
+        margin-top: 10px;
+        a {
+          color: @black;
+          &:hover {
+            color: @pink;
           }
         }
       }
@@ -226,6 +254,11 @@
               margin-right: 8px;
               text-align: center;
               line-height: 30px;
+              .pointer;
+              &:hover {
+                color: @client;
+                border-color: @client;
+              }
             }
           }
           .num {
@@ -334,6 +367,111 @@
     }
     .recommend {
       width: 220px;
+      .shop {
+        .name {
+          position: relative;
+          font-size: 12px;
+          text-align: center;
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            top: 7px;
+            height: 1px;
+            width: 45px;
+            border-bottom: 1px dotted @dark-gray;
+          }
+          &::before {
+            left: 10px;
+          }
+          &::after {
+            right: 13px;
+          }
+        }
+        .list {
+          margin-top: 8px;
+          height: 465px;
+          overflow: hidden;
+          position: relative;
+          ul {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            li {
+              text-align: center;
+              margin-bottom: 8px;
+              a {
+                color: @black;
+                &:hover {
+                  color: @pink;
+                }
+              }
+              .pic {
+                width: 100px;
+              }
+              .title {
+                font-size: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: 0 6px;
+                margin: 5px 0;
+              }
+              .price {
+                color: @pink;
+              }
+            }
+          }
+        }
+        .page-btn {
+          width: 100%;
+          position: relative;
+          .page {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-top: @border;
+            border-right: @border;
+            border-width: 3px;
+            .pointer;
+            &:hover {
+              border-color: @light-black;
+            }
+            &.page-down {
+              top: -4px;
+              left: 80px;
+              transform: rotate(135deg);
+            }
+            &.page-up {
+              top: 6px;
+              right: 80px;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .goods-content {
+    margin-top: 30px;
+    .goods {
+      height: 42px;
+      border: @border;
+      background: @gray;
+      .module {
+        display: inline-block;
+        width: 110px;
+        border-right: @border;
+        text-align: center;
+        line-height: 100%;
+        position: relative;
+        h4 {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 42px;
+          margin: 0;
+        }
+      }
     }
   }
 }
