@@ -21,6 +21,17 @@ return array(
         'Home',
     ),
 
+    // file save path
+    'file_save_path' => array(
+        'root_path' => './thikphp/Public/Uploads/',
+    ),
+
+    // 模板中使用到的常量
+    'TMPL_PARSE_STRING' => array(
+        '__UPLOAD__' => './thikphp//Public/Uploads'
+    ),
+
+
     // 默认模块
     'DEFAULT_MODULE' => 'Home',
 
